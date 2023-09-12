@@ -1,5 +1,7 @@
 import {makeAutoObservable} from "mobx";
 import {reqFields} from "../components/HeadPage/components/Field/Field";
+import {nowStringDate} from "../utils/nowStringDate";
+import {generateRandomString} from "../utils/getRandomString";
 
 export type ItemCard = {
     name: string,
@@ -22,9 +24,44 @@ export interface ITodo {
 class ArrayTask {
     initialState: ITodo = {
         todos: {
-            wait: [],
-            progress: [],
-            done: [],
+            wait: [
+                {
+                    name: 'Отправить тестовое',
+                    description: '',
+                    urgency: 2,
+                    date: nowStringDate(),
+                    id: generateRandomString(),
+                    position: "wait"
+                },
+                {
+                    name: 'Приготовить ужин',
+                    description: '',
+                    urgency: 1,
+                    date: nowStringDate(),
+                    id: generateRandomString(),
+                    position: "wait"
+                },
+            ],
+            progress: [
+                {
+                    name: 'Начать тестовое',
+                    description: 'Приложение задач',
+                    urgency: 2,
+                    date: nowStringDate(),
+                    id: generateRandomString(),
+                    position: "progress"
+                },
+            ],
+            done: [
+                {
+                    name: 'Купить кота',
+                    description: 'Чеширского',
+                    urgency: 0,
+                    date: nowStringDate(),
+                    id: generateRandomString(),
+                    position: "done"
+                },
+            ],
         },
     }
 
