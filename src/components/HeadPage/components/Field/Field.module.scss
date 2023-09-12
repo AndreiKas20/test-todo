@@ -1,0 +1,24 @@
+.field {
+  padding: 25px 10px;
+  min-height: 100vh;
+  &__subtitle {
+    margin-bottom: 40px;
+    position: relative;
+    color: #003841;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 67, 87, 0.72);
+      bottom: -5px;
+      left: 0;
+    }
+  }
+  &__cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+

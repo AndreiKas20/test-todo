@@ -1,0 +1,68 @@
+{
+  "name": "todo-mindbox",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/material": "^5.14.8",
+    "@mui/styled-engine-sc": "^5.14.8",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.48",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "mobx": "^6.10.2",
+    "mobx-react-lite": "^4.0.4",
+    "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.66.1",
+    "styled-components": "^5.3.11",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "e2e-test": "(npx playwright || npm run report) && npm run report",
+    "unit-test": "jest /unit/testItem.test.ts",
+    "report": "allure generate --clean && allure open"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-flow": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.22.15",
+    "@playwright/test": "^1.37.1",
+    "allure-playwright": "^2.7.0",
+    "babel-jest": "^29.6.4",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.2.0",
+    "redux-mock-store": "^1.5.4"
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  &__buttonAdd {
+    position: fixed!important;
+    left: 50px;
+    bottom: 50px;
+  }
+}
